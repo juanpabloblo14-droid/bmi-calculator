@@ -103,7 +103,26 @@ button:active {
     font-weight: 700;
     padding: 4px 14px;
     border-radius: 20px;
-    background: #e0f2f1;
-    color: #00695c;
     display: inline-block;
 }
+
+.underweight{
+    background-color:#fee2e2;
+    color:#b91c1c;
+}
+
+.normalweight{
+    background-color:#dcfce7;
+    color:#15803d;
+}
+
+.overweight{
+    background-color:#fef3c7;
+    color:#b45309;
+}
+
+.obese{
+    background-color:#fecaca;
+    color:#991b1b;
+}
+

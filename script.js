@@ -19,12 +19,20 @@ function calculateBody() {
     bmiResult.textContent = bmi.toFixed(1);
     if (bmi < 18.5) {
         bmiCategory.textContent = "Underweight";
+        bmiCategory.className = "";
+        bmiCategory.classList.add("underweight");
     } else if (bmi < 25) {
         bmiCategory.textContent = "Normal weight";
+        bmiCategory.className = "";
+        bmiCategory.classList.add("normalweight");
     } else if (bmi < 30) {
         bmiCategory.textContent = "Overweight";
+        bmiCategory.className = "";
+        bmiCategory.classList.add("overweight");
     } else {
         bmiCategory.textContent = "obese";
+        bmiCategory.className = "";
+        bmiCategory.classList.add("obese");
     }
 }
 
