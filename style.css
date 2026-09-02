@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.calculator-container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 380px;
+}
+
+.calculator-container h1 {
+    text-align: center;
+    color: #0f2027;
+    margin-bottom: 30px;
+    font-size: 1.6rem;
+}
+
+label {
+    display: block;
+    font-size: 0.9rem;
+    color: #64748b;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 20px;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #2c5364;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: #2c5364;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+    margin-bottom: 25px;
+}
+
+button:hover {
+    background: #203a43;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.results {
+    background: #f0f4f5;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+}
+
+.results p {
+    font-size: 1rem;
+    color: #334155;
+    margin-bottom: 8px;
+}
+
+.results p:last-child {
+    margin-bottom: 0;
+}
+
+#bmiResult {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c5364;
+    display: block;
+    margin: 5px 0;
+}
+
+#bmiCategory {
+    font-weight: 700;
+    padding: 4px 14px;
+    border-radius: 20px;
+    background: #e0f2f1;
+    color: #00695c;
+    display: inline-block;
+}
